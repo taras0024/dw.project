@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block context %}
+    {% autoescape off %}
+    <div>
+            <div>
+                <h2>{{ post.title }}</h2>
+                <p>{{ post.author }} | {{ post.created }}</p>
+                <p>{{ post.body|safe }}</p>
+{#                safe потрібен для того щоб аутоескейп був тільки для цього блчока#}
+            </div>
+    </div>
+    {% endautoescape %}
+{% endblock context%}
