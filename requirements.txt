@@ -9,12 +9,17 @@ cffi==1.14.5
 chardet==4.0.0
 decorator==4.4.2
 defusedxml==0.6.0
+dj-database-url==0.5.0
 Django==3.1.7
 django-ckeditor==6.0.0
+django-extensions==3.1.1
+django-heroku==0.3.1
 django-js-asset==1.2.2
+djangorestframework==3.12.2
 entrypoints==0.3
 flake8==3.8.4
 gunicorn==20.0.4
+heroku==0.1.4
 idna==2.10
 ipykernel==5.5.0
 ipython==7.21.0
@@ -44,6 +49,7 @@ pexpect==4.8.0
 pickleshare==0.7.5
 prometheus-client==0.9.0
 prompt-toolkit==3.0.16
+psycopg2==2.8.6
 ptyprocess==0.7.0
 pycodestyle==2.6.0
 pycparser==2.20
@@ -51,7 +57,7 @@ pyflakes==2.2.0
 Pygments==2.8.0
 pyparsing==2.4.7
 pyrsistent==0.17.3
-python-dateutil==2.8.1
+python-dateutil==1.5
 pytz==2021.1
 pyzmq==22.0.3
 qtconsole==5.0.2

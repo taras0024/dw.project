@@ -5,8 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="440e91d2-ae94-40c4-be43-d776d36ae455" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/account/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account/viewsets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/viewsets.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/_common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/_version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/easter.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/easter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/parser/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/parser/_parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/parser/isoparser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/relativedelta.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/relativedelta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/rrule.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/rrule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/tz/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/tz/_common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/tz/_factories.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/tz/tz.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/tz/win.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/tzwin.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/tzwin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/zoneinfo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/zoneinfo/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/zoneinfo/dateutil-zoneinfo.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/zoneinfo/rebuild.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/python_dateutil-2.8.1.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/python_dateutil-2.8.1.dist-info/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/python_dateutil-2.8.1.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/python_dateutil-2.8.1.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/python_dateutil-2.8.1.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/python_dateutil-2.8.1.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/python_dateutil-2.8.1.dist-info/zip-safe" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/post_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +149,8 @@
       <workItem from="1614796295313" duration="3616000" />
       <workItem from="1614844729871" duration="21313000" />
       <workItem from="1614869054799" duration="1296000" />
-      <workItem from="1614880936077" duration="4418000" />
+      <workItem from="1614880936077" duration="4843000" />
+      <workItem from="1614930815992" duration="6393000" />
     </task>
     <servers />
   </component>
