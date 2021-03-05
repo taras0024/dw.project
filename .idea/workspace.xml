@@ -5,43 +5,323 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="440e91d2-ae94-40c4-be43-d776d36ae455" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/account/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/viewsets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/viewsets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/PyYAML-5.4.1.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/PyYAML-5.4.1.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/PyYAML-5.4.1.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/PyYAML-5.4.1.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/PyYAML-5.4.1.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/PyYAML-5.4.1.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/_ruamel_yaml.cpython-38-x86_64-linux-gnu.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/_yaml/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi-2.3.3.dist-info/DESCRIPTION.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi-2.3.3.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi-2.3.3.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi-2.3.3.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi-2.3.3.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi-2.3.3.dist-info/entry_points.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi-2.3.3.dist-info/metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi-2.3.3.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi/client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi/codecs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi/codecs/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi/codecs/corejson.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi/codecs/display.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi/codecs/download.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi/codecs/jsondata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi/codecs/python.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi/codecs/text.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi/compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi/document.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi/transports/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi/transports/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi/transports/http.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreapi/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema-0.0.4.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema-0.0.4.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema-0.0.4.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema-0.0.4.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema-0.0.4.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema/compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema/encodings/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema/encodings/corejson.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema/encodings/html.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema/encodings/jsonschema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema/formats.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema/schemas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema/templates/bootstrap3/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema/templates/bootstrap3/inputs/checkbox.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema/templates/bootstrap3/inputs/input.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema/templates/bootstrap3/inputs/select.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema/templates/bootstrap3/inputs/select_multiple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema/templates/bootstrap3/inputs/textarea.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema/templates/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/coreschema/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filter-2.4.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filter-2.4.0.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filter-2.4.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filter-2.4.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filter-2.4.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filter-2.4.0.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/conf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/fields.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/filters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/filterset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/be/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/be/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/bg/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/bg/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/cs/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/cs/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/da/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/da/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/de/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/de/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/el/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/el/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/es_AR/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/es_AR/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/es_ES/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/es_ES/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/fr/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/pl/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/pl/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/pt_BR/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/pt_BR/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/ru/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/ru/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/sk/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/sk/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/uk/LC_MESSAGES/django.mo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/uk/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/locale/zh_CN/LC_MESSAGES/django.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/rest_framework/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/rest_framework/backends.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/rest_framework/filters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/rest_framework/filterset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/templates/django_filters/rest_framework/crispy_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/templates/django_filters/rest_framework/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/templates/django_filters/widgets/multiwidget.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/django_filters/widgets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_extensions-0.7.0.dist-info/AUTHORS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_extensions-0.7.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_extensions-0.7.0.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_extensions-0.7.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_extensions-0.7.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_extensions-0.7.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_extensions-0.7.0.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg-1.20.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg-1.20.0.dist-info/LICENSE.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg-1.20.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg-1.20.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg-1.20.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg-1.20.0.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/app_settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/codecs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/generators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/inspectors/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/inspectors/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/inspectors/field.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/inspectors/query.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/inspectors/view.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/management/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/management/commands/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/management/commands/generate_swagger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/middleware.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/openapi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/renderers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/static/drf-yasg/immutable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/static/drf-yasg/insQ.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/static/drf-yasg/redoc-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/static/drf-yasg/redoc-old/redoc.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/static/drf-yasg/redoc/redoc-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/static/drf-yasg/redoc/redoc.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/static/drf-yasg/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/static/drf-yasg/swagger-ui-dist/absolute-path.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/static/drf-yasg/swagger-ui-dist/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/static/drf-yasg/swagger-ui-dist/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/static/drf-yasg/swagger-ui-dist/oauth2-redirect.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/static/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/static/drf-yasg/swagger-ui-dist/swagger-ui-es-bundle-core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/static/drf-yasg/swagger-ui-dist/swagger-ui-es-bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/static/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/static/drf-yasg/swagger-ui-dist/swagger-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/static/drf-yasg/swagger-ui-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/static/drf-yasg/url-polyfill.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/templates/drf-yasg/redoc-old.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/templates/drf-yasg/redoc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/templates/drf-yasg/swagger-ui.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/drf_yasg/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/inflection-0.5.1.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/inflection-0.5.1.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/inflection-0.5.1.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/inflection-0.5.1.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/inflection-0.5.1.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/inflection-0.5.1.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/inflection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/inflection/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/inflection/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/itypes-1.2.0.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/itypes-1.2.0.dist-info/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/itypes-1.2.0.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/itypes-1.2.0.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/itypes-1.2.0.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/itypes-1.2.0.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/itypes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/bulk_operations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/bulk_operations/mixins.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/cache/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/cache/decorators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/cache/mixins.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/decorators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/etag/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/etag/decorators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/etag/mixins.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/exceptions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/fields.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/key_constructor/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/key_constructor/bits.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/key_constructor/constructors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/mixins.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/permissions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/routers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework_extensions/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel.yaml-0.16.13-py3.8-nspkg.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel.yaml-0.16.13.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel.yaml-0.16.13.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel.yaml-0.16.13.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel.yaml-0.16.13.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel.yaml-0.16.13.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel.yaml-0.16.13.dist-info/namespace_packages.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel.yaml-0.16.13.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel.yaml.clib-0.2.2.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel.yaml.clib-0.2.2.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel.yaml.clib-0.2.2.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel.yaml.clib-0.2.2.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel.yaml.clib-0.2.2.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel.yaml.clib-0.2.2.dist-info/namespace_packages.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel.yaml.clib-0.2.2.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/anchor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/comments.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/composer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/configobjwalker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/constructor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/cyaml.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/dumper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/emitter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/error.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/events.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/nodes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/py.typed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/representer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/resolver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/scalarbool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/scalarfloat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/scalarint.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/scalarstring.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/scanner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/serializer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/timestamp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/tokens.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/ruamel/yaml/util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator-2.7.3.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator-2.7.3.dist-info/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator-2.7.3.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator-2.7.3.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator-2.7.3.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator-2.7.3.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator/__about__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator/ref_validators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator/schemas/v1.2/apiDeclaration.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator/schemas/v1.2/authorizationObject.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator/schemas/v1.2/dataType.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator/schemas/v1.2/dataTypeBase.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator/schemas/v1.2/infoObject.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator/schemas/v1.2/modelsObject.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator/schemas/v1.2/oauth2GrantType.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator/schemas/v1.2/operationObject.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator/schemas/v1.2/parameterObject.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator/schemas/v1.2/resourceListing.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator/schemas/v1.2/resourceObject.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator/schemas/v2.0/schema.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator/util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator/val_tst.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator/validator12.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/swagger_spec_validator/validator20.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/uritemplate-3.0.1.dist-info/AUTHORS.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/uritemplate-3.0.1.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/uritemplate-3.0.1.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/uritemplate-3.0.1.dist-info/LICENSE.APACHE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/uritemplate-3.0.1.dist-info/LICENSE.BSD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/uritemplate-3.0.1.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/uritemplate-3.0.1.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/uritemplate-3.0.1.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/uritemplate-3.0.1.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/uritemplate/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/uritemplate/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/uritemplate/orderedset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/uritemplate/template.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/uritemplate/variable.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/yaml/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/yaml/_yaml.cpython-38-x86_64-linux-gnu.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/yaml/composer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/yaml/constructor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/yaml/cyaml.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/yaml/dumper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/yaml/emitter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/yaml/error.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/yaml/events.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/yaml/loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/yaml/nodes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/yaml/parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/yaml/reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/yaml/representer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/yaml/resolver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/yaml/scanner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/yaml/serializer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/yaml/tokens.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/article/api_urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/article/filter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/article/pagination.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/article/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/article/viewsets.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/_common.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/_version.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/easter.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/easter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/parser/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/parser/_parser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/parser/isoparser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/relativedelta.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/relativedelta.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/rrule.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/rrule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/tz/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/tz/_common.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/tz/_factories.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/tz/tz.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/tz/win.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/tzwin.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/tzwin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/zoneinfo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/zoneinfo/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/zoneinfo/dateutil-zoneinfo.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/zoneinfo/rebuild.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/python_dateutil-2.8.1.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/python_dateutil-2.8.1.dist-info/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/python_dateutil-2.8.1.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/python_dateutil-2.8.1.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/python_dateutil-2.8.1.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/python_dateutil-2.8.1.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/python_dateutil-2.8.1.dist-info/zip-safe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/viewsets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/article/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/article/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/post_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/viewsets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,12 +350,15 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1pEtSl90CbnlzNds4OW5sbXET1o" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -150,11 +433,26 @@
       <workItem from="1614844729871" duration="21313000" />
       <workItem from="1614869054799" duration="1296000" />
       <workItem from="1614880936077" duration="4843000" />
-      <workItem from="1614930815992" duration="6393000" />
+      <workItem from="1614930815992" duration="10821000" />
+      <workItem from="1614944397636" duration="13740000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/.venv/lib/python3.8/site-packages/rest_framework/serializers.py</url>
+          <line>540</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

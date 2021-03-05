@@ -56,9 +56,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'django_extensions',
     'ckeditor',
     'ckeditor_uploader',
     'rest_framework',
+    'django_filters',
+    'drf_yasg',
 
     'article',
     'account',
@@ -156,6 +159,7 @@ LOGGING = {
     "handlers": {
         "console": {
             "class": "logging.StreamHandler",
+            "level": "DEBUG"
         },
     },
     "loggers": {
@@ -164,9 +168,9 @@ LOGGING = {
             "level": os.getenv("DJANGO_LOG_LEVEL", "INFO"),
             "propagate": False,
         },
-        "django.db": {
+        "django.db.backends": {
             "handlers": ["console"],
-            "level": os.getenv("DJANGO_LOG_LEVEL", "DEBUG"),
+            "level": "DEBUG",
             "propagate": False,
         },
     },
@@ -177,7 +181,10 @@ REST_FRAMEWORK = {
     # or allow read-only access for unauthenticated users.
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticatedOrReadOnly'
-    ]
+    ],
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
+    'DEFAULT_PAGINATION_CLASS': 'article.pagination.DefaultPagination'
 }
+
 
 django_heroku.settings(locals())

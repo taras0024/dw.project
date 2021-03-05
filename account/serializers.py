@@ -12,10 +12,10 @@ class UserSerializer(BaseModelSerializer):
 
     def create(self, validated_data):
         return User.objects.create_user(**validated_data)
+
     class Meta:
         model = User
-        fields = ('id', 'first_name', 'last_name')
-
+        fields = ('id', 'first_name', 'last_name', 'email', 'username')
 
 # class UserBaseSerializer(Serializer):
 #     id = serializers.IntegerField(read_only=True)

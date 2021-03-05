@@ -12,9 +12,9 @@ class GenericViewSetMixin(GenericViewSet):
         return self.serializer_classes.get(self.action, self.serializer_class)
 
 
-class BaseModelViewSet(ModelViewSet):
+class BaseModelViewSet(GenericViewSetMixin, ModelViewSet):
     pass
 
 
-class BaseModelReadOnlyViewSet(ReadOnlyModelViewSet):
+class BaseModelReadOnlyViewSet(GenericViewSetMixin, ReadOnlyModelViewSet):
     pass
