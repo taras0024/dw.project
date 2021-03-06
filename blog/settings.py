@@ -60,7 +60,7 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
     'rest_framework',
-    'django_filter',
+    'django_filters',
     'drf_yasg',
 
     'article',
