@@ -50,6 +50,10 @@ class PostAdminModel(admin.ModelAdmin):
         return obj.like_count
         # return obj.likes.count()
 
+    def comments_count(self):
+        number_of_comment = Comment.objects.filter(post=self).count()
+        return number_of_comment
+
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):

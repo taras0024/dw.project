@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from rest_framework_extensions.mixins import NestedViewSetMixin
 
 from article.filter import PostFilter, CommentFilter
-from article.models import Post, Comment
+from article.models import Post, Comment, Like
 from article.serializers import PostSerializer, CommentSerializer
 from core.viewsets import BaseModelViewSet
 from django_filters.rest_framework import DjangoFilterBackend
@@ -30,17 +30,32 @@ class PostViewSet(BaseModelViewSet):
                 .annotate(like_count=Count("likes"))
         )
 
-
     @action(methods=['POST'], detail=True, url_path='do_like')
     def like(self, request, *args, **kwargs):
         session = request.session.session_key
-
+        like = Like(session_key=session, post=Post.objects.get(id=1))
+        like.save()
         # TODO зробити Лайк з використанням сешин кей або IP адреси клієнта
         return Response('')
 
+    @action(methods=["GET"], detail=False, url_path="top_by_comments")
+    def top_path_by_comments(self, request, *args, **kwargs):
+        top_count = int(request.GET.get('top', 10))
+        posts = Post.objects.all()[:top_count]
+        serializer = PostSerializer(posts, many=True)
+        return Response({
+            "comments": serializer.data
+        })
 
-# TODO підключити джанго-фільтер, зробити фільтрування постів, коментарів
-# підключити drf_yasg,
+    @action(methods=["GET"], detail=False, url_path="top_by_likes")
+    def top_post_by_likes(self, request, *args, **kwargs):
+        top_count = int(request.GET.get('top', 10))
+        posts = Post.objects.all()[:top_count]
+        serializer = PostSerializer(posts, many=True)
+        return Response({
+            "posts": serializer.data
+        })
+
 
 class CommentViewSet(NestedViewSetMixin, BaseModelViewSet):
     queryset = Comment.objects.all()
@@ -53,6 +68,3 @@ class CommentViewSet(NestedViewSetMixin, BaseModelViewSet):
         if kwargs.get('data'):
             kwargs['data'].update(self.get_parents_query_dict())
         return super(CommentViewSet, self).get_serializer(*args, **kwargs)
-
-
-

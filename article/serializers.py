@@ -15,16 +15,13 @@ class CommentSerializer(BaseModelSerializer):
 
 
 class PostSerializer(BaseModelSerializer):
+    comments = CommentSerializer(many=True, read_only=True)
+    like_count = serializers.IntegerField()
     author_id = serializers.PrimaryKeyRelatedField(
         queryset=User.objects.all(), source='author'
     )
 
-    like_count = serializers.IntegerField()
-
     # TODO serializer author
-
-    comments = CommentSerializer(many=True, read_only=True)
-
     class Meta:
         model = Post
         fields = ('id', 'author_id', 'slug', 'title', 'body', 'comments', 'like_count')
