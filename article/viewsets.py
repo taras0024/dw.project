@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from django.db.models import Count
 from rest_framework.decorators import action
 from rest_framework.filters import SearchFilter, OrderingFilter
@@ -33,9 +35,9 @@ class PostViewSet(BaseModelViewSet):
     @action(methods=["GET"], detail=False, url_path="top_by_comments")
     def top_by_comments(self, request, *args, **kwargs):
         top_count = int(request.GET.get('top', 10))
-        posts = Post.objects.all()\
-                    .annotate(like_count=Count("likes", distinct=True),\
-                    comments_count=Count("comments", distinct=True)).order_by('-comments_count')[:top_count]
+        posts = Post.objects.all() \
+                    .annotate(like_count=Count("likes", distinct=True), \
+                              comments_count=Count("comments", distinct=True)).order_by('-comments_count')[:top_count]
         serializer = PostSerializer(posts, many=True)
         return Response({
             "comments": serializer.data
@@ -44,13 +46,21 @@ class PostViewSet(BaseModelViewSet):
     @action(methods=["GET"], detail=False, url_path="top_by_likes")
     def top_by_likes(self, request, *args, **kwargs):
         top_count = int(request.GET.get('top', 10))
-        posts = Post.objects.all()\
-                    .annotate(like_count=Count("likes", distinct=True),\
-                    comments_count=Count("comments", distinct=True)).order_by('-like_count')[:top_count]
+        posts = Post.objects.all() \
+                    .annotate(like_count=Count("likes", distinct=True), \
+                              comments_count=Count("comments", distinct=True)).order_by('-like_count')[:top_count]
         serializer = PostSerializer(posts, many=True)
         return Response({
             "posts": serializer.data
         })
+
+    def get_client_ip(self, request):
+        x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+        if x_forwarded_for:
+            ip = x_forwarded_for.split(',')[0]
+        else:
+            ip = request.META.get('REMOTE_ADDR')
+        return ip
 
     @action(methods=["POST"], detail=True, url_path="do_like")
     def like(self, request, *args, **kwargs):
