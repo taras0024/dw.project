@@ -27,33 +27,47 @@ class PostViewSet(BaseModelViewSet):
         return (
             qs.prefetch_related('comments')
                 .select_related("author")
-                .annotate(like_count=Count("likes"))
+                .annotate(like_count=Count("likes", distinct=True), comments_count=Count('comments', distinct=True))
         )
 
-    @action(methods=['POST'], detail=True, url_path='do_like')
-    def like(self, request, *args, **kwargs):
-        session = request.session.session_key
-        like = Like(session_key=session, post=Post.objects.get(id=1))
-        like.save()
-        # TODO зробити Лайк з використанням сешин кей або IP адреси клієнта
-        return Response('')
-
     @action(methods=["GET"], detail=False, url_path="top_by_comments")
-    def top_path_by_comments(self, request, *args, **kwargs):
+    def top_by_comments(self, request, *args, **kwargs):
         top_count = int(request.GET.get('top', 10))
-        posts = Post.objects.all()[:top_count]
+        posts = Post.objects.all()\
+                    .annotate(like_count=Count("likes", distinct=True),\
+                    comments_count=Count("comments", distinct=True)).order_by('-comments_count')[:top_count]
         serializer = PostSerializer(posts, many=True)
         return Response({
             "comments": serializer.data
         })
 
     @action(methods=["GET"], detail=False, url_path="top_by_likes")
-    def top_post_by_likes(self, request, *args, **kwargs):
+    def top_by_likes(self, request, *args, **kwargs):
         top_count = int(request.GET.get('top', 10))
-        posts = Post.objects.all()[:top_count]
+        posts = Post.objects.all()\
+                    .annotate(like_count=Count("likes", distinct=True),\
+                    comments_count=Count("comments", distinct=True)).order_by('-like_count')[:top_count]
         serializer = PostSerializer(posts, many=True)
         return Response({
             "posts": serializer.data
+        })
+
+    @action(methods=["POST"], detail=True, url_path="do_like")
+    def like(self, request, *args, **kwargs):
+        session = request.session.session_key
+        user_ip = self.get_client_ip(request)
+        if not session:
+            session = user_ip
+        post = self.get_object()
+        # user_ip
+        existed_like = Like.objects.filter(session_key=session, post=post).first()
+        if existed_like:
+            existed_like.delete()
+        else:
+            Like.objects.create(session_key=session, created=datetime.now(), post=post)
+        likes = Like.objects.filter(post=post).count()
+        return Response({
+            "likes": likes
         })
 
 

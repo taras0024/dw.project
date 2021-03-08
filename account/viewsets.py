@@ -5,6 +5,7 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 
 from article.filter import UserFilter
+from article.models import Like, Post, Comment
 from article.serializers import PostSerializer
 from core.viewsets import BaseModelViewSet
 from .serializers import UserSerializer
@@ -26,3 +27,7 @@ class UserViewSet(BaseModelViewSet):
         data = user.posts.all().annotate(like_count=Count("likes"))
         serializer = self.get_serializer(data, many=True)
         return Response(serializer.data)
+
+
+
+

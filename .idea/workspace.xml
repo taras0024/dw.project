@@ -6,9 +6,28 @@
   <component name="ChangeListManager">
     <list default="true" id="440e91d2-ae94-40c4-be43-d776d36ae455" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/article/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/easter.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/easter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/relativedelta.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/relativedelta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/rrule.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/rrule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/tz.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/tzwin.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/tzwin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/zoneinfo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/zoneinfo/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/dateutil/zoneinfo/zoneinfo-2010g.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/python_dateutil-1.5.egg-info/PKG-INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/python_dateutil-1.5.egg-info/SOURCES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/python_dateutil-1.5.egg-info/dependency_links.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/python_dateutil-1.5.egg-info/installed-files.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/python_dateutil-1.5.egg-info/not-zip-safe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.venv/lib/python3.8/site-packages/python_dateutil-1.5.egg-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Untitled.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/viewsets.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/article/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/article/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/article/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/article/viewsets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +72,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -124,7 +144,10 @@
       <workItem from="1614944397636" duration="14579000" />
       <workItem from="1614970105831" duration="2485000" />
       <workItem from="1615024750382" duration="9471000" />
-      <workItem from="1615139513525" duration="2363000" />
+      <workItem from="1615139513525" duration="5341000" />
+      <workItem from="1615203228505" duration="12729000" />
+      <workItem from="1615218297115" duration="1304000" />
+      <workItem from="1615219654432" duration="2223000" />
     </task>
     <servers />
   </component>
