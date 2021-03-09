@@ -15,7 +15,10 @@ class UserSerializer(BaseModelSerializer):
 
     class Meta:
         model = User
-        fields = ('id', 'first_name', 'last_name', 'email', 'username')
+        fields = ('id', 'first_name', 'last_name', 'email', 'username', 'password')
+        extra_kwargs = {
+            "password": {"write_only": True}
+        }
 
 # class UserBaseSerializer(Serializer):
 #     id = serializers.IntegerField(read_only=True)

@@ -63,6 +63,11 @@ INSTALLED_APPS = [
     'django_filters',
     'drf_yasg',
 
+    # 'rest_framework.authtoken',
+    # 'corsheaders',
+    # 'djoser',
+
+
     'article',
     'account',
 ]
@@ -76,6 +81,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    # 'corsheaders.middleware.CorsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'blog.urls'
@@ -180,10 +188,12 @@ REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticatedOrReadOnly'
+        'rest_framework.permissions.IsAuthenticated',
     ],
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
-    'DEFAULT_PAGINATION_CLASS': 'article.pagination.DefaultPagination'
+    'DEFAULT_PAGINATION_CLASS': 'article.pagination.DefaultPagination',
+    "DEFAULT_AUTHENTICATION_CLASSES": ('rest_framework_simplejwt.authentication.JWTAuthentication',),
+
 }
 
 

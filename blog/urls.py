@@ -18,12 +18,19 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
 from django.views.static import serve
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('article.urls'), name='article'),
     path(r'^ckeditor/', include('ckeditor_uploader.urls')),
     path('api-auth/', include('rest_framework.urls')),
+    path('api/token/', TokenObtainPairView.as_view()),
+    path('api/token/refresh/', TokenRefreshView.as_view()),
+
+
+    # path('api/auth/', include('djoser.urls')),
+    # path('api/auth-token/', include('djoser.urls.authtoken')),
 
     path('api/', include('core.urls')),
 

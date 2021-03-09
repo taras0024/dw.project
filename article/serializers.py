@@ -9,12 +9,16 @@ User = get_user_model()
 
 
 class CommentSerializer(BaseModelSerializer):
+    post_id = serializers.PrimaryKeyRelatedField(
+        queryset=Post.objects.all(), source='post'
+    )
     class Meta:
         model = Comment
-        fields = ('id', 'author', 'body')
+        fields = ('id', 'author', 'body', 'post_id')
 
 
 class PostSerializer(BaseModelSerializer):
+
     comments = CommentSerializer(many=True, read_only=True)
     like_count = serializers.IntegerField()
     comments_count = serializers.IntegerField()
