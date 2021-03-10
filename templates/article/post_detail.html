@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block context %}
     {% autoescape off %}
     <div>
@@ -8,6 +9,55 @@
                 <p>{{ post.body|safe }}</p>
 {#                safe потрібен для того щоб аутоескейп був тільки для цього блчока#}
             </div>
+            <div>
+            Comments:
+                {% for comment in post.comments.all %}
+                <h4>Author => {{ comment.author }}</h4>
+                <h4> body => {{ comment.body }} </h4>
+                 {% endfor %}
+            </div>
     </div>
     {% endautoescape %}
+    <div class="form-wrapper">
+        <form id="form_id">
+            Comment create <br>
+            <input id="author" placeholder="author"><br>
+            <textarea id="body" placeholder="body" rows="10" cols="40"></textarea> <br>
+            <input id="post_id" type="hidden" value={{ post.id }}>
+            <button  type="submit">Send</button>
+        </form>
+
+        <div id="comment_list"></div>
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(() => {
+    $("form").submit(function (e) {
+        e.preventDefault();
+        var author = $("#author");
+        var body = $("#body");
+        var post_id = $("#post_id").val();
+        $.ajax({
+          type: "POST",
+          url: `/api/article/posts/${post_id}/comments/`,
+          data: JSON.stringify({
+              'author': author.val(),
+              'body': body.val(),
+          }),
+          success: function () {
+              $("#comment_list").append(`<div>${author.val()} ${body.val()}</div>`);
+              author.val("");
+              body.val("");
+          },
+          contentType : 'application/json',
+        });
+
+    });
+});
+    </script>
+
 {% endblock context%}
