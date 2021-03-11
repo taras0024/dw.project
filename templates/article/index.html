@@ -3,8 +3,14 @@
     <div>
 {#        {{a}}#}
         <div class="jumbotron">
-          <h1 class="display-4">Hello, this is my blog <span class="badge badge-secondary">New</span> </h1>
-          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+          <h1 class="display-4 animated">Hello, this is my blog <span class="badge badge-secondary">New</span> </h1>
+         <pre>
+             <p class="lead">
+              (*)  (*)
+                \\/<
+              [______]
+             </p>
+         </pre>
           <hr class="my-4">
             <h2 pt-20>Here you can see posts: </h2>
         </div>
@@ -31,4 +37,17 @@
             </div>
         {% endautoescape %}
     </div>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                $('.display-4').each(function () {
+                    var imagePos = $(this).offset().top;
+                    var topOfWindow = $(window).scrollTop();
+                    if (imagePos < topOfWindow + 650) {
+                        $(this).addClass("fadeInLeft");
+                    }
+                });
+            });
+        })
+    </script>
 {% endblock context%}

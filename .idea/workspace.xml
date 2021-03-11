@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="440e91d2-ae94-40c4-be43-d776d36ae455" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/animate.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/article/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/article/post_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/post_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
@@ -61,6 +61,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/article" />
       <recent name="$PROJECT_DIR$/templates/article" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
     </key>
   </component>
   <component name="RunManager" selected="Python.parser">
@@ -167,7 +170,8 @@
       <workItem from="1615395416640" duration="3303000" />
       <workItem from="1615399400230" duration="1314000" />
       <workItem from="1615449702239" duration="659000" />
-      <workItem from="1615467718304" duration="7908000" />
+      <workItem from="1615467718304" duration="8343000" />
+      <workItem from="1615485384346" duration="4909000" />
     </task>
     <servers />
   </component>
