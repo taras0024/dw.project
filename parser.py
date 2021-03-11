@@ -2,12 +2,6 @@ import requests
 import json
 
 
-# http://127.0.0.1:8000/
-url_posts = 'api/article/posts/'
-url_posts_top_by_like = 'api/article/posts/top_by_likes/'
-url_posts_top_by_comments = 'api/article/posts/top_by_comments/'
-
-
 class Parser:
 
     def __init__(self, host):
@@ -16,46 +10,49 @@ class Parser:
     def get(self, url):
         return requests.get(f'{self.host}{url}').json()
 
-    # def get_posts(self):
-    #     return requests.get(f'{self.host}{url_posts}').json()
+    def post(self, url, *args, **kwargs):
+        return requests.post(f'{self.host}{url}')
 
     def get_posts(self):
         return self.get('api/article/posts/')
 
     def get_posts_top_by_like(self):
-        return requests.get(f'{self.host}{url_posts_top_by_like}').json()
+        return self.get('api/article/posts/top_by_likes/')
 
     def get_posts_top_by_comments(self):
-        return requests.get(f'{self.host}{url_posts_top_by_comments}').json()
+        return self.get('api/article/posts/top_by_comments/')
 
     def get_one_post(self, post_id):
-        return requests.get(f'{self.host}{url_posts}{str(post_id)}').json()
+        return self.get(f'api/article/posts/{post_id}/')
 
     def do_like(self, post_id):
-        response = requests.post(f'{self.host}{url_posts}{str(post_id)}/do_like/', data={"session_key": 1})
-        return response.json()
+        return self.post((f'api/article/posts/{post_id}/do_like/'), data=json.dumps({"session_key": 1}),
+                         headers={"Content-Type": "application/json"}).json()
 
-    def post_comment(self, post_id, data):
-        response = requests.post((f'{self.host}{url_posts}{str(post_id)}/comments/'),
-                                 data=json.dumps(data), headers={"Content-Type": "application/json"})
-        return response.text
-
+    def post_comment(self, post_id):
+        data = {
+            'author': 'dsadasdasd',
+            'body': 'fasafdasd'
+        }
+        # return requests.post((f'{self.host}api/article/posts/{post_id}/comments/'),
+        #                          data=json.dumps(data), headers={"Content-Type": "application/json"}).text
+        return self.post((f'api/article/posts/{post_id}/comments/'), data=json.dumps(data),
+                         headers={"Content-Type": "application/json"}).text
 
 
 local = Parser('http://127.0.0.1:8000/')
 heroku = Parser('https://dw-project.herokuapp.com/')
 #
 # print('local')
-print(local.get_posts())
+# print(local.get_posts())
 # print(local.get_posts_top_by_like())
 # print(local.get_posts_top_by_comments())
 # print(local.get_one_post(1202))
-# print(local.do_like(1202))
-# print(local.post_comment('1202'))
+print(local.do_like(1202))
+print(local.post_comment(1301))
 
 # print('heroku')
 # print(heroku.get_posts())
-
 
 
 # while True:
@@ -91,4 +88,3 @@ print(local.get_posts())
 #         })
 #     else:
 #         print('Невірна операція \n')
-

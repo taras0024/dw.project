@@ -3,30 +3,43 @@
 {% block context %}
     {% autoescape off %}
     <div>
-            <div>
-                <h2>{{ post.title }}</h2>
-                <p>{{ post.author }} | {{ post.created }}</p>
-                <p>{{ post.body|safe }}</p>
+        <div>
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.author }} | {{ post.created }}</p>
+            <p>{{ post.body|safe }}</p>
 {#                safe потрібен для того щоб аутоескейп був тільки для цього блчока#}
-            </div>
-            <div>
-            Comments:
+        </div>
+{#                <button type="submit" id="like" class="fab fa-accessible-icon">Like {{ post.likes.count }}</button>#}
+            <button type="button" class="btn btn-primary">
+                <i id="like" class="fas fa-poo">{{ post.likes.count }}</i><span class="badge badge-light"></span>
+            </button>
+
+        <div>
+            <h3>Comments:</h3>
                 {% for comment in post.comments.all %}
-                <h4>Author => {{ comment.author }}</h4>
-                <h4> body => {{ comment.body }} </h4>
-                 {% endfor %}
-            </div>
+                    <ul class="list-group list-group-horizontal">
+                      <li class="list-group-item">Author: {{ comment.author }}</li>
+                      <li class="list-group-item">{{ comment.body }}</li>
+                    </ul>
+                {% endfor %}
+        </div>
     </div>
     {% endautoescape %}
-    <div class="form-wrapper">
+    <div class="alert alert-success d-none" role="alert">
+         Comment successfully created
+    </div>
+    <button id="create_comment">create comment</button>
+    <div id="hidden" class="form-wrapper d-none">
         <form id="form_id">
-            Comment create <br>
-            <input id="author" placeholder="author"><br>
-            <textarea id="body" placeholder="body" rows="10" cols="40"></textarea> <br>
+          <div class="form-group">
+            <input type="text" class="form-control" id="author" placeholder="Author">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="body" rows="3"></textarea>
+          </div>
             <input id="post_id" type="hidden" value={{ post.id }}>
-            <button  type="submit">Send</button>
+            <button id="send_comment" type="submit">Send</button>
         </form>
-
         <div id="comment_list"></div>
     </div>
     <script
@@ -36,28 +49,49 @@
     </script>
     <script>
         $(document).ready(() => {
-    $("form").submit(function (e) {
-        e.preventDefault();
-        var author = $("#author");
-        var body = $("#body");
-        var post_id = $("#post_id").val();
-        $.ajax({
-          type: "POST",
-          url: `/api/article/posts/${post_id}/comments/`,
-          data: JSON.stringify({
-              'author': author.val(),
-              'body': body.val(),
-          }),
-          success: function () {
-              $("#comment_list").append(`<div>${author.val()} ${body.val()}</div>`);
-              author.val("");
-              body.val("");
-          },
-          contentType : 'application/json',
-        });
+            $("#like").click(function (e) {
+                var post_id = $("#post_id").val();
+                $.ajax({
+                    type: "POST",
+                    url: `/api/article/posts/${post_id}/do_like/`,
+                    success: function (data) {
+                        console.log(data.likes);
+                        $("#like").text(`${data.likes}`)
+                        {#{likes: 1}#}
+                    }
+                });
+            });
 
-    });
-});
+            $("form").submit(function (e) {
+                e.preventDefault();
+                var author = $("#author");
+                var body = $("#body");
+                var post_id = $("#post_id").val();
+                $.ajax({
+                  type: "POST",
+                  url: `/api/article/posts/${post_id}/comments/`,
+                  data: JSON.stringify({
+                      'author': author.val(),
+                      'body': body.val(),
+                  }),
+                  success: function () {
+                      $("#comment_list").append(`<div>${author.val()} ${body.val()}</div>`);
+                      author.val("");
+                      body.val("");
+                      $('div#hidden').addClass('d-none');
+                      $('div.alert-success').addClass('d-none');
+                      setTimeout(() => {
+                         $('div.alert-success').removeClass('d-none');
+                              }, 3000);
+                  },
+                  contentType : 'application/json',
+                });
+            });
+
+            $('button#create_comment').click(function (){
+               $('div#hidden').toggleClass('d-none');
+            });
+        });
     </script>
 
 {% endblock context%}
