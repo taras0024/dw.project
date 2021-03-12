@@ -9,6 +9,7 @@ from rest_framework_extensions.mixins import NestedViewSetMixin
 
 from article.filter import PostFilter, CommentFilter
 from article.models import Post, Comment, Like
+from article.pagination import DefaultPagination
 from article.permissions import PostPermission, CommentPermission
 from article.serializers import PostSerializer, CommentSerializer
 from core.viewsets import BaseModelViewSet
@@ -84,6 +85,7 @@ class PostViewSet(BaseModelViewSet):
 
 
 class CommentViewSet(NestedViewSetMixin, BaseModelViewSet):
+    pagination_class = None
     queryset = Comment.objects.all()
     serializer_class = CommentSerializer
     permission_classes = [CommentPermission]

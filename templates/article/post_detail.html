@@ -1,15 +1,22 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block context %}
+    <style>
+        img{
+            width: 100% !important;
+            height: auto !important;
+            max-width: 400px;
+            align-content: center;
+
+        }
+    </style>
     {% autoescape off %}
-        <style>
-        </style>
     <div>
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
             <h1 class="display-4">{{ post.title }}</h1>
 {#                safe потрібен для того щоб аутоескейп був тільки для цього блчока#}
-            <p class="lead">
+            <p class="lead col-12">
                 {{ post.body|safe }}
                 <p class="text-right">{{ post.author }} | {{ post.created }}</p>
             </p>
@@ -31,25 +38,30 @@
 {#                    </ul>#}
 {#                {% endfor %}#}
 {#        </div>#}
-    <div>
-         <div class="card-body text-center">
-             <h4 class="card-title">Latest Comments</h4>
-         </div>
-        {% for comment in post.comments.all %}
-        <div class="row d-flex justify-content-center mt-100 mb-100">
-            <div class="col-lg-6">
-                <div class="card">
-                    <div class="comment-widgets"><div class="d-flex flex-row comment-row m-t-0">
-                            <div class="comment-text w-100">
-                                <h6 class="font-medium">{{ comment.author }}</h6> <span class="m-b-15 d-block">{{ comment.body }}</span>
+{#        <div id="loading">Loading...</div>#}
+        <div id="loading" class="spinner-grow text-info" role="status">
+             <span class="sr-only">Loading...</span>
+        </div>
+        <div id="comments" class="d-none">
+             <div class="card-body text-center">
+                 <h4 class="card-title">Latest Comments</h4>
+             </div>
+            {% for comment in post.comments.all %}
+            <div class="row d-flex justify-content-center mt-100 mb-100">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="comment-widgets">
+                            <div class="d-flex flex-row comment-row m-t-0">
+                                <div class="comment-text w-100">
+                                    <h6 class="font-medium">{{ comment.author }}</h6> <span class="m-b-15 d-block">{{ comment.body }}</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
-    </div>
     </div>
     {% endautoescape %}
     <div class="alert alert-success d-none" role="alert">
@@ -69,13 +81,47 @@
         </form>
         <div id="comment_list"></div>
     </div>
+
     <script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous">
     </script>
     <script>
+        function loadComments(){
+            $('#loading').removeClass('d-none')
+            $('#comments').html("")
+            var post_id = $('#post_id').val()
+            $.ajax({
+                url:`/api/article/posts/${post_id}/comments/?count=0`,
+                type: "GET",
+                success: function (data) {
+                    console.log(data)
+                    $('#loading').addClass('d-none')
+                    $('#comments').removeClass('d-none')
+                    for (let i = 0; i < data.length; i++){
+                        const comment = $(
+                            `<div class="row d-flex justify-content-center mt-100 mb-100">
+                                <div class="col-lg-6">
+                                    <div class="card">
+                                        <div class="comment-widgets"><div class="d-flex flex-row comment-row m-t-0">
+                                                <div class="comment-text w-100">
+                                                    <h6 class="font-medium">${data[i].author}</h6> <span class="m-b-15 d-block">${data[i].body}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                         </div>`)
+                        $('#comments').append(comment)
+                    }
+                }
+            });
+        }
         $(document).ready(() => {
+            setTimeout(() => {
+                loadComments()
+            }, 1500);
             $("#like").click(function (e) {
                 var post_id = $("#post_id").val();
                 $.ajax({
@@ -88,37 +134,38 @@
                     }
                 });
             });
-
             $("form").submit(function (e) {
                 e.preventDefault();
                 var author = $("#author");
                 var body = $("#body");
                 var post_id = $("#post_id").val();
                 $.ajax({
-                  type: "POST",
-                  url: `/api/article/posts/${post_id}/comments/`,
-                  data: JSON.stringify({
-                      'author': author.val(),
-                      'body': body.val(),
-                  }),
-                  success: function () {
-                      $("#comment_list").append(`<div>${author.val()} ${body.val()}</div>`);
-                      author.val("");
-                      body.val("");
-                      $('div#hidden').addClass('d-none');
-                      $('div.alert-success').removeClass('d-none');
-                      setTimeout(() => {
-                         $('div.alert-success').addClass('d-none');
-                              }, 3000);
-                  },
-                  contentType : 'application/json',
+                    type: "POST",
+                    url: `/api/article/posts/${post_id}/comments/`,
+                    data: JSON.stringify({
+                        'author': author.val(),
+                        'body': body.val(),
+                    }),
+                    success: function () {
+                        $("#comment_list").append(`<div>${author.val()} ${body.val()}</div>`);
+                        author.val("");
+                        body.val("");
+                        $('div#hidden').addClass('d-none');
+                        $('div.alert-success').removeClass('d-none');
+                        setTimeout(() => {
+                            $('div.alert-success').addClass('d-none');
+                        }, 3000);
+                    loadComments();
+                    },
+                    contentType: 'application/json',
                 });
             });
 
-            $('button#create_comment').click(function (){
-               $('div#hidden').toggleClass('d-none');
+            $('button#create_comment').click(function () {
+                $('div#hidden').toggleClass('d-none');
             });
         });
+
     </script>
 
 {% endblock context%}
